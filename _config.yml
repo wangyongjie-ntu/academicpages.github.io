@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wang Yongjie / Site Title"
+title                    : "Wang Yongjie's Site"
 title_separator          : "-"
 name                     : &name "Wang Yongjie"
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Wang Yongjie"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Location"
@@ -209,15 +209,15 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  # _teachin
+  #- scope:
+  #    path: ""
+  #    type: teaching
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    share: true
+  #    comments: true
   # _publications
   - scope:
       path: ""
@@ -228,14 +228,14 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+#  - scope:
+#      path: ""
+#      type: portfolio
+#    values:
+#      layout: single
+#      author_profile: true
+#      share: true
+#      comment: true
   # _talks
   - scope:
       path: ""
