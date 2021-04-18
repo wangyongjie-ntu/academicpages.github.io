@@ -15,9 +15,11 @@ Note of Probability Basics.
 **Random Variable**: the outcomes or states of the world, denoted as $X$.
 
 **Permutation**: A permutation is an arrangement of $r$ objects from a pool of $n$ objects, in a given order. The number of such arrangements is given by $P(n, r)$, defined as,
+
 $$ P(n, r) = \frac{n!}{(n-r)!}$$
 
 **Combination**: A combination is an arrangement of $r$ objects from a pool of $n$ objects,  where the order does not matter. The number of such arrangements is given by $C(n, r)$, defined as,
+
 $$ C(n,r) = \frac{P(n,r )}{r!} = \frac{n!}{(n-r)!r!}$$
 
 We will write $p(x)$ to mean Probability $P(X = x)$. $p(x)$ is the probability density function (**PDF**):
@@ -26,6 +28,7 @@ We will write $p(x)$ to mean Probability $P(X = x)$. $p(x)$ is the probability d
 - reflects how often does $x$ occur, or how much do we believe $x$.
 
 **Cumulative distribution function (CDF)**- The cumulative distribution function $F$, which is motononically non-decreasing and is such that $\lim_{x\to -\infty} F(x) = 0$ and $\lim_{x\to +\infty} F(x) = 1$, is defined as :
+
 $$ F(x) = P(X \le x)$$
 
 **Expectation**:  $E[x] = \int_xx\cdot p(x)dx$
@@ -42,15 +45,20 @@ $$ F(x) = P(X \le x)$$
 **Conditional Probability**: $p(x\|y)  = P(X=x\|Y=y) = p(x, y)/p(y) $, the probability of $X=x$ given $Y=y$. 
 
 **Sum Rule (marginalization/summing out)**:
+
 $$ p(x) = \sum_yp(x,y)$$
+
 $$p(x_1) = \sum_{x_2}\sum_{x_3}...\sum_{x_N}p(x_1, x_2, ..., x_N)$$
 
 **Product/Chain Rule**:
-$$p(x,y) = p(y\|x)p(x)$$
-$$p(x_1, ..., x_N) = p(x_1)p(x_2\|x_1)...p(x_N\|x_1,...,x_{N-1})$$
+
+$$p(x,y) = p(y|x)p(x)$$
+
+$$p(x_1, ..., x_N) = p(x_1)p(x_2|x_1)...p(x_N|x_1,...,x_{N-1})$$
 
 **Bayes Rule**:
-$$p(x\|y) = \frac{p(y\|x)p(x)}{p(y)}=\frac{p(y\|x)p(x)}{\sum_{x'} p(y\|x')p(x')}$$
+
+$$p(x|y) = \frac{p(y|x)p(x)}{p(y)}=\frac{p(y|x)p(x)}{\sum_{x'} p(y|x')p(x')}$$
 
 # Frequently Used Distributions
 
