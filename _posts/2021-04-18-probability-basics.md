@@ -37,6 +37,18 @@ $$ F(x) = P(X \le x)$$
 
 **Standard Deviation**: $\sigma = \sqrt{Var(X)}$
 
+**Transformation of random variables**- Let the variables $X$ and $Y$ be linked by some function. By noting $f_X$ and $f_Y$ the distribution of $X$ and $Y$ respectively, we have,
+
+$$f_Y(y) = f_X(x)|\frac{dx}{dy}|$$
+
+**Leibniz integral rule**: Let $g$ be a function of $x$ and potentially $c$, and $a,b$ boundaries that may depend on $c$. We have,
+
+$$\frac{\partial}{\partial c}(\int_a^bg(x)dx) = \frac{\partial b}{\partial c} \cdot g(b) - \frac{\partial a}{\partial c} \cdot g(a) + \int_a^b\frac{g}{\partial c}(x)dx$$
+
+**Chebyshev's inequality**: Let $X$ be a random variable with expected value $\mu$ and standard deviation $\sigma$. For $k,\sigma \gt 0$, we have the following inequality:
+
+$$P(|X-\mu| \ge k\sigma) \le \frac{1}{k^2}$$
+
 
 # Joint & Conditional Probability
 
@@ -60,6 +72,14 @@ $$p(x_1, ..., x_N) = p(x_1)p(x_2|x_1)...p(x_N|x_1,...,x_{N-1})$$
 
 $$p(x|y) = \frac{p(y|x)p(x)}{p(y)}=\frac{p(y|x)p(x)}{\sum_{x'} p(y|x')p(x')}$$
 
+**Covariance**- We define the covariance of two random variables $X$ and $Y$ as follows, which is also noted as $\sigma_{XY}^2$.
+
+$$Cov(X,Y) = E[(X-\mu_X)(Y-\mu_Y)] = E[XY] - \mu_X\mu_Y$$
+
+**Correlation**: The correlation between two random variables $X$ and $Y$ are,
+
+$$\rho_{XY}  = \frac{\sigma_{XY}^2}{\sigma_X \cdot \sigma_Y}$$
+
 # Frequently Used Distributions
 
 
@@ -69,4 +89,3 @@ $$p(x|y) = \frac{p(y|x)p(x)}{p(y)}=\frac{p(y|x)p(x)}{\sum_{x'} p(y|x')p(x')}$$
 [Github Stanford CS229 Machine Learning](https://github.com/afshinea/stanford-cs-229-machine-learning/blob/master/en/refresher-probabilities-statistics.pdf)
 
 [Probability Basics for Machine Learning](http://www.cs.toronto.edu/~urtasun/courses/CSC2515/Tutorial-ReviewProbability.pdf)
-
