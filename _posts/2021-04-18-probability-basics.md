@@ -143,7 +143,7 @@ $$\bar{X} \sim_{n\to +\infty} N(\mu, \frac{\sigma}{\sqrt{n}}) $$
 
 $$p(\theta|d) = \frac{p(d|\theta)p(\theta)}{p(d)}$$
 
-$p(d|\theta)$ is the likelihood function
+$p(d\|\theta)$ is the likelihood function
 
 $p(\theta)$ is the prior probability of (or our prior belief over) $\theta$.
 
