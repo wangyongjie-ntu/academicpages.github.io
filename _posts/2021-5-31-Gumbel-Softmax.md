@@ -6,6 +6,8 @@ tags:
   - Gumbel-Softmax
 ---
 
+
+
 # Introduction
 
 If we want to learn some discrete representations, like some categorical features with a neural network, we usually learn the parameters of such discrete distribution and sample from such that parametric distribution. However, we cannot back-propagate through samples.
@@ -23,7 +25,9 @@ The noise $\varepsilon$ is zero-mean to avoid the bias added. In such way, we di
 ![Fig 2](https://sassafras13.github.io/images/2020-08-13-GumbelSoftmax-fig2.png)
 
 We first introduce the Gumbel-Max trick that  provides a simple way to draw samples $z$ from categorical distribution. 
+
 $$z = \text{one\_hot}(\arg\max_i [g_i + \log(\pi_i)])$$
+
 $g$ is the random noise from the Gumbel distribution $g = -\log(-\log(\mu)), \mu \sim \text{Uniform}(0,1)$.  A mathematical proof of Gumbel-Max is equivalent to the softmax operation can be found in [link](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/).
 
 ![Fig 3](https://sassafras13.github.io/images/2020-08-13-GumbelSoftmax-fig3.png)
