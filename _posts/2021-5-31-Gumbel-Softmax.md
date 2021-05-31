@@ -6,7 +6,7 @@ tags:
   - Gumbel-Softmax
 ---
 
-
+Gumbel-Softmax
 
 # Introduction
 
